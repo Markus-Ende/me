@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NxModule } from '@nrwl/nx';
@@ -13,6 +14,7 @@ import { MenuModule } from './menu/menu.module';
     BrowserModule,
     BrowserAnimationsModule,
     NxModule.forRoot(),
+    FlexLayoutModule,
     AppRoutingModule,
     MenuModule
   ],

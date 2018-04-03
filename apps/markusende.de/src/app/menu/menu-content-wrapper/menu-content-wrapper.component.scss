@@ -11,6 +11,14 @@
   overflow-y: auto;
 }
 
+.main-area--xs {
+  padding: 5px;
+}
+
+.main-area--gt-xs {
+  padding-top: 40px;
+}
+
 .menu-button {
   position: fixed;
   top: 0;

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule, MatDialogModule, MatIconModule } from '@angular/material';
 
 import { MainMenuComponent } from './main-menu/main-menu.component';
@@ -14,7 +15,8 @@ import { MenuService } from './shared/menu.service';
     MenuRoutingModule,
     MatButtonModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    FlexLayoutModule
   ],
   declarations: [
     MenuButtonComponent,
