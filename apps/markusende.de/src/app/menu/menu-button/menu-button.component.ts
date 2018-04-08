@@ -10,9 +10,11 @@ import { MenuService } from '../shared/menu.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MenuButtonComponent implements OnInit {
+  public buttonIcon: string;
   constructor(private menuService: MenuService, private dialog: MatDialog) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   toggleMenu(): void {
     this.menuService.toggleMainMenu();

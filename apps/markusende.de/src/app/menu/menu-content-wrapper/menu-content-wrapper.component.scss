@@ -2,25 +2,29 @@
   display: block;
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .main-area {
   position: absolute;
-  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
+  height: 100%;
   overflow-y: auto;
 }
 
-.main-area--xs {
-  padding: 5px;
-}
-
-.main-area--gt-xs {
-  padding-top: 40px;
-}
-
 .menu-button {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+
+  &--xs {
+    bottom: 3px;
+    right: 3px;
+  }
+
+  &--gt-xs {
+    top: 10px;
+    left: 10px;
+  }
 }
